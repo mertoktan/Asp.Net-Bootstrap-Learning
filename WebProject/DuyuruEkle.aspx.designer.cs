@@ -24,13 +24,13 @@ namespace WebProject
         protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
 
         /// <summary>
-        /// TxtDuyuruOgretmen denetimi.
+        /// DropDownList1 denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtDuyuruOgretmen;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
         /// TxtDuyuruBaslık denetimi.
@@ -42,13 +42,13 @@ namespace WebProject
         protected global::System.Web.UI.WebControls.TextBox TxtDuyuruBaslık;
 
         /// <summary>
-        /// TxtDuyuruIcerık denetimi.
+        /// TextArea1 denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtDuyuruIcerık;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextArea1;
 
         /// <summary>
         /// Button1 denetimi.

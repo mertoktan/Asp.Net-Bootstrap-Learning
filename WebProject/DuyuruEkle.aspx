@@ -6,8 +6,8 @@
     <form id="Form1" runat="server">
         <div class="form-group">
             <div>
-                <asp:Label for="TxtDuyuruOgretmen" runat="server">Duyuru Öğretmen</asp:Label>
-                <asp:TextBox ID="TxtDuyuruOgretmen" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:Label for="DropDownList1" runat="server">Duyuru Öğretmen</asp:Label>
+                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control"></asp:DropDownList>
             </div>
             <br />
             <div>
@@ -16,11 +16,13 @@
             </div>
             <br />
             <div>
-                <asp:Label for="TxtDuyuruIcerık" runat="server">Duyuru İçerik</asp:Label>
-                <asp:TextBox ID="TxtDuyuruIcerık" runat="server" CssClass="form-control"></asp:TextBox>
+
+                <asp:Label for="TextArea1" runat="server">Duyuru İçerik</asp:Label>
+                <textarea id="TextArea1" cols="20" rows="6" class="form-control" runat="server"></textarea>
+                
             </div>
             </div>
-        <asp:Button ID="Button1" runat="server" Text="Oluştur" CssClass="btn btn-info" />
+        <asp:Button ID="Button1" runat="server" Text="Oluştur" CssClass="btn btn-info" OnClick="Button1_Click" />
 
         </form>
 </asp:Content>

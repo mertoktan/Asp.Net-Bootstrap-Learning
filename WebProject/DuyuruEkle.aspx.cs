@@ -11,7 +11,26 @@ namespace WebProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Page.IsPostBack==false)
+            {
+                DataSet1TableAdapters.Tbl_OgretmenTableAdapter dt = new DataSet1TableAdapters.Tbl_OgretmenTableAdapter();
+                DropDownList1.DataSource = dt.OgretmenListesi();
+                DropDownList1.DataTextField = "OGRTADSOYAD";
+                DropDownList1.DataValueField = "OGRTID";
 
+
+
+                DropDownList1.DataBind();
+            }
+           
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            DataSet1TableAdapters.Tbl_DuyurularTableAdapter dt = new DataSet1TableAdapters.Tbl_DuyurularTableAdapter();
+            dt.DuyuruEkle(TxtDuyuruBaslık.Text, TextArea1.Value.ToString(),Convert.ToInt32(DropDownList1.SelectedValue));
+            Response.Redirect("DuyuruListesi.Aspx");
         }
     }
 }
