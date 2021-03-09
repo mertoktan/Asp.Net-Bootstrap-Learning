@@ -335,6 +335,7 @@
     <Content Include="Dosyalar1\sidebar\style4.css" />
     <Content Include="Dosyalar1\sidebar\style5.css" />
     <Content Include="Dosyalar1\StyleSheet2.css" />
+    <Content Include="DuyuruListesi.aspx" />
     <Content Include="OgrenciSil.aspx" />
     <Content Include="OgrencıEkle.aspx" />
     <Content Include="OgrencıGuncelle.aspx" />
@@ -352,6 +353,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruListesi.aspx.cs">
+      <DependentUpon>DuyuruListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruListesi.aspx.designer.cs">
+      <DependentUpon>DuyuruListesi.aspx</DependentUpon>
     </Compile>
     <Compile Include="OgrenciSil.aspx.cs">
       <DependentUpon>OgrenciSil.aspx</DependentUpon>

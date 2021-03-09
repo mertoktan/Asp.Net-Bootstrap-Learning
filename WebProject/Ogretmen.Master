@@ -52,11 +52,17 @@
                         </a>
                         
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="active">
+                        <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">
                             <i class="glyphicon glyphicon-link"></i>
                             Duyurular
                         </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu2">
+                            <li><a href="DuyuruListesi.aspx"><i class="	glyphicon glyphicon-list"></i>Duyuru Listesi</a></li>
+                            <li><a href="DuyuruEkle.aspx"><i class="	glyphicon glyphicon-pencil"></i>Duyuru Ekle</a></li>
+                            
+                            
+                        </ul>
                     </li>
                     <li>
                         <a href="#">
