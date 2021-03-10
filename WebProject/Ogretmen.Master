@@ -46,11 +46,19 @@
                             <i class="glyphicon glyphicon-briefcase"></i>
                             Dersler
                         </a>
-                        <a href="#" >
+                        <li class="active">
+                        <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false">
                             <i class="	glyphicon glyphicon-envelope"></i>
                             Mesajlar
                         </a>
-                        
+                        <ul class="collapse list-unstyled" id="homeSubmenu3">
+                            <li><a href="GelenMesajlar.aspx"><i class="	glyphicon glyphicon-download"></i>Gelen Mesajlar</a></li>
+                            <li><a href="GidenMesajlar.aspx"><i class="	glyphicon glyphicon-upload"></i>Gönderilen Mesajlar</a></li>
+                            <li><a href="MesajOluştur.aspx"><i class="	glyphicon glyphicon-edit"></i>Mesaj Yaz</a></li>
+                            
+                            
+                        </ul>
+                        </li>
                     </li>
                     <li class="active">
                         <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">
@@ -77,7 +85,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="Grafikler.aspx">
                             <i class="glyphicon glyphicon-random"></i>
                             Grafikler
                         </a>
@@ -90,8 +98,8 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="	glyphicon glyphicon-cog"></i>
-                            Ayarlar
+                            <i class="	glyphicon glyphicon-eye-close"></i>
+                            Çıkış Yap
                         </a>
                     </li>
                 </ul>

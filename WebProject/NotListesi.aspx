@@ -7,8 +7,9 @@
     <table class="table table-bordered table-hover">
         <thead class="thead-dark">
             <tr>
-                
+
                 <th scope="col">OGRENCI ID</th>
+
                 <th scope="col">AD SOYAD</th>
                 <th scope="col">DERS ADI</th>
                 <th scope="col">SINAV1</th>
@@ -26,6 +27,7 @@
                 <ItemTemplate>
                     <tr>
                         <td><%#Eval("OGRENCIID") %></td>
+
                         <td><%#Eval("OGRENCIADSOYAD") %></td>
                         <td><%#Eval("DERSAD") %></td>
                         <td><%#Eval("SINAV1") %></td>
