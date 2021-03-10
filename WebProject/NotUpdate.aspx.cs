@@ -50,5 +50,13 @@ namespace WebProject
             }
 
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            nid = Convert.ToInt32(Request.QueryString["NOTID"].ToString());
+            DataSet1TableAdapters.OgrNotlarTableAdapter dt = new DataSet1TableAdapters.OgrNotlarTableAdapter();
+            dt.NOTGUNCELLE(byte.Parse(Txtsınav1.Text),byte.Parse(Txtsınav2.Text), byte.Parse(Txtsınav3.Text),decimal.Parse(Txtortalama.Text),bool.Parse(Txtdurum.Text),nid);
+            Response.Redirect("NotListesi.aspx");
+        }
     }
 }

@@ -47,7 +47,7 @@
             </div>
         </div>
         <asp:Button ID="Button1" runat="server" Text="Hesapla" CssClass="btn btn-info" OnClick="Button1_Click" />
-         <asp:Button ID="Button2" runat="server" Text="Güncelle" CssClass="btn btn-primary"  />
+         <asp:Button ID="Button2" runat="server" Text="Güncelle" CssClass="btn btn-primary" OnClick="Button2_Click"  />
 
 
     </form>
