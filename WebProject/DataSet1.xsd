@@ -484,6 +484,82 @@ WHERE  (GONDEREN = '0001')</CommandText>
               </DbSource>
             </Sources>
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="UdemySiteDBConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="İstatistik0" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="İstatistik0" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="İstatistik0" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT 
+FROM     Tbl_Ogrenci</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources>
+              <DbSource ConnectionRef="UdemySiteDBConnectionString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="İstatistik1" Modifier="Public" Name="İstatistik1" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="İstatistik1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*)
+FROM     Tbl_Ogrenci</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="UdemySiteDBConnectionString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="İstatistik2" Modifier="Public" Name="İstatistik2" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="İstatistik2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*)
+FROM     Tbl_Ogretmen</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="UdemySiteDBConnectionString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="İstatistik3" Modifier="Public" Name="İstatistik3" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="İstatistik3">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*)
+FROM     Tbl_Dersler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="UdemySiteDBConnectionString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="İstatistik4" Modifier="Public" Name="İstatistik4" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="İstatistik4">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT OGRAD+ ' ' +OGRSOYAD FROM Tbl_Notlar INNER JOIN Tbl_Ogrenci ON Tbl_Notlar.OGRENCIID=Tbl_Ogrenci.OGRID WHERE Sınav1=(SELECT MAX(Sınav1)
+FROM     Tbl_Notlar)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="UdemySiteDBConnectionString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="İstatistik5" Modifier="Public" Name="İstatistik5" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="İstatistik5">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT count(*) FROM Tbl_Mesajlar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="UdemySiteDBConnectionString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="İstatistik6" Modifier="Public" Name="İstatistik6" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="İstatistik6">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) FROM Tbl_Duyurular</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="UdemySiteDBConnectionString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="İstatistik7" Modifier="Public" Name="İstatistik7" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="İstatistik7">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT AVG(SINAV1) FROM Tbl_Notlar WHERE DERSID=2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -492,7 +568,7 @@ WHERE  (GONDEREN = '0001')</CommandText>
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Tbl_Ogrenci" msprop:Generator_TableClassName="Tbl_OgrenciDataTable" msprop:Generator_TableVarName="tableTbl_Ogrenci" msprop:Generator_RowChangedName="Tbl_OgrenciRowChanged" msprop:Generator_TablePropName="Tbl_Ogrenci" msprop:Generator_RowDeletingName="Tbl_OgrenciRowDeleting" msprop:Generator_RowChangingName="Tbl_OgrenciRowChanging" msprop:Generator_RowEvHandlerName="Tbl_OgrenciRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_OgrenciRowDeleted" msprop:Generator_RowClassName="Tbl_OgrenciRow" msprop:Generator_UserTableName="Tbl_Ogrenci" msprop:Generator_RowEvArgName="Tbl_OgrenciRowChangeEvent">
+        <xs:element name="Tbl_Ogrenci" msprop:Generator_TableClassName="Tbl_OgrenciDataTable" msprop:Generator_TableVarName="tableTbl_Ogrenci" msprop:Generator_TablePropName="Tbl_Ogrenci" msprop:Generator_RowDeletingName="Tbl_OgrenciRowDeleting" msprop:Generator_RowChangingName="Tbl_OgrenciRowChanging" msprop:Generator_RowEvHandlerName="Tbl_OgrenciRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_OgrenciRowDeleted" msprop:Generator_UserTableName="Tbl_Ogrenci" msprop:Generator_RowChangedName="Tbl_OgrenciRowChanged" msprop:Generator_RowEvArgName="Tbl_OgrenciRowChangeEvent" msprop:Generator_RowClassName="Tbl_OgrenciRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="OGRID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnOGRID" msprop:Generator_ColumnPropNameInRow="OGRID" msprop:Generator_ColumnPropNameInTable="OGRIDColumn" msprop:Generator_UserColumnName="OGRID" type="xs:int" />
@@ -542,7 +618,7 @@ WHERE  (GONDEREN = '0001')</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Tbl_Duyurular" msprop:Generator_TableClassName="Tbl_DuyurularDataTable" msprop:Generator_TableVarName="tableTbl_Duyurular" msprop:Generator_RowChangedName="Tbl_DuyurularRowChanged" msprop:Generator_TablePropName="Tbl_Duyurular" msprop:Generator_RowDeletingName="Tbl_DuyurularRowDeleting" msprop:Generator_RowChangingName="Tbl_DuyurularRowChanging" msprop:Generator_RowEvHandlerName="Tbl_DuyurularRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_DuyurularRowDeleted" msprop:Generator_RowClassName="Tbl_DuyurularRow" msprop:Generator_UserTableName="Tbl_Duyurular" msprop:Generator_RowEvArgName="Tbl_DuyurularRowChangeEvent">
+        <xs:element name="Tbl_Duyurular" msprop:Generator_TableClassName="Tbl_DuyurularDataTable" msprop:Generator_TableVarName="tableTbl_Duyurular" msprop:Generator_TablePropName="Tbl_Duyurular" msprop:Generator_RowDeletingName="Tbl_DuyurularRowDeleting" msprop:Generator_RowChangingName="Tbl_DuyurularRowChanging" msprop:Generator_RowEvHandlerName="Tbl_DuyurularRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_DuyurularRowDeleted" msprop:Generator_UserTableName="Tbl_Duyurular" msprop:Generator_RowChangedName="Tbl_DuyurularRowChanged" msprop:Generator_RowEvArgName="Tbl_DuyurularRowChangeEvent" msprop:Generator_RowClassName="Tbl_DuyurularRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="DUYURUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDUYURUID" msprop:Generator_ColumnPropNameInRow="DUYURUID" msprop:Generator_ColumnPropNameInTable="DUYURUIDColumn" msprop:Generator_UserColumnName="DUYURUID" type="xs:int" />
@@ -564,7 +640,7 @@ WHERE  (GONDEREN = '0001')</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Tbl_Ogretmen" msprop:Generator_TableClassName="Tbl_OgretmenDataTable" msprop:Generator_TableVarName="tableTbl_Ogretmen" msprop:Generator_RowChangedName="Tbl_OgretmenRowChanged" msprop:Generator_TablePropName="Tbl_Ogretmen" msprop:Generator_RowDeletingName="Tbl_OgretmenRowDeleting" msprop:Generator_RowChangingName="Tbl_OgretmenRowChanging" msprop:Generator_RowEvHandlerName="Tbl_OgretmenRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_OgretmenRowDeleted" msprop:Generator_RowClassName="Tbl_OgretmenRow" msprop:Generator_UserTableName="Tbl_Ogretmen" msprop:Generator_RowEvArgName="Tbl_OgretmenRowChangeEvent">
+        <xs:element name="Tbl_Ogretmen" msprop:Generator_TableClassName="Tbl_OgretmenDataTable" msprop:Generator_TableVarName="tableTbl_Ogretmen" msprop:Generator_TablePropName="Tbl_Ogretmen" msprop:Generator_RowDeletingName="Tbl_OgretmenRowDeleting" msprop:Generator_RowChangingName="Tbl_OgretmenRowChanging" msprop:Generator_RowEvHandlerName="Tbl_OgretmenRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_OgretmenRowDeleted" msprop:Generator_UserTableName="Tbl_Ogretmen" msprop:Generator_RowChangedName="Tbl_OgretmenRowChanged" msprop:Generator_RowEvArgName="Tbl_OgretmenRowChangeEvent" msprop:Generator_RowClassName="Tbl_OgretmenRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="OGRTID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnOGRTID" msprop:Generator_ColumnPropNameInRow="OGRTID" msprop:Generator_ColumnPropNameInTable="OGRTIDColumn" msprop:Generator_UserColumnName="OGRTID" type="xs:int" />
@@ -586,7 +662,7 @@ WHERE  (GONDEREN = '0001')</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="OgrNotlar" msprop:Generator_TableClassName="OgrNotlarDataTable" msprop:Generator_TableVarName="tableOgrNotlar" msprop:Generator_TablePropName="OgrNotlar" msprop:Generator_RowDeletingName="OgrNotlarRowDeleting" msprop:Generator_RowChangingName="OgrNotlarRowChanging" msprop:Generator_RowEvHandlerName="OgrNotlarRowChangeEventHandler" msprop:Generator_RowDeletedName="OgrNotlarRowDeleted" msprop:Generator_UserTableName="OgrNotlar" msprop:Generator_RowChangedName="OgrNotlarRowChanged" msprop:Generator_RowEvArgName="OgrNotlarRowChangeEvent" msprop:Generator_RowClassName="OgrNotlarRow">
+        <xs:element name="OgrNotlar" msprop:Generator_TableClassName="OgrNotlarDataTable" msprop:Generator_TableVarName="tableOgrNotlar" msprop:Generator_RowChangedName="OgrNotlarRowChanged" msprop:Generator_TablePropName="OgrNotlar" msprop:Generator_RowDeletingName="OgrNotlarRowDeleting" msprop:Generator_RowChangingName="OgrNotlarRowChanging" msprop:Generator_RowEvHandlerName="OgrNotlarRowChangeEventHandler" msprop:Generator_RowDeletedName="OgrNotlarRowDeleted" msprop:Generator_RowClassName="OgrNotlarRow" msprop:Generator_UserTableName="OgrNotlar" msprop:Generator_RowEvArgName="OgrNotlarRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="OGRENCIID" msprop:Generator_ColumnVarNameInTable="columnOGRENCIID" msprop:Generator_ColumnPropNameInRow="OGRENCIID" msprop:Generator_ColumnPropNameInTable="OGRENCIIDColumn" msprop:Generator_UserColumnName="OGRENCIID" type="xs:int" />
@@ -613,7 +689,7 @@ WHERE  (GONDEREN = '0001')</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Tbl_Dersler" msprop:Generator_TableClassName="Tbl_DerslerDataTable" msprop:Generator_TableVarName="tableTbl_Dersler" msprop:Generator_RowChangedName="Tbl_DerslerRowChanged" msprop:Generator_TablePropName="Tbl_Dersler" msprop:Generator_RowDeletingName="Tbl_DerslerRowDeleting" msprop:Generator_RowChangingName="Tbl_DerslerRowChanging" msprop:Generator_RowEvHandlerName="Tbl_DerslerRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_DerslerRowDeleted" msprop:Generator_RowClassName="Tbl_DerslerRow" msprop:Generator_UserTableName="Tbl_Dersler" msprop:Generator_RowEvArgName="Tbl_DerslerRowChangeEvent">
+        <xs:element name="Tbl_Dersler" msprop:Generator_TableClassName="Tbl_DerslerDataTable" msprop:Generator_TableVarName="tableTbl_Dersler" msprop:Generator_TablePropName="Tbl_Dersler" msprop:Generator_RowDeletingName="Tbl_DerslerRowDeleting" msprop:Generator_RowChangingName="Tbl_DerslerRowChanging" msprop:Generator_RowEvHandlerName="Tbl_DerslerRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_DerslerRowDeleted" msprop:Generator_UserTableName="Tbl_Dersler" msprop:Generator_RowChangedName="Tbl_DerslerRowChanged" msprop:Generator_RowEvArgName="Tbl_DerslerRowChangeEvent" msprop:Generator_RowClassName="Tbl_DerslerRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="DERSID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDERSID" msprop:Generator_ColumnPropNameInRow="DERSID" msprop:Generator_ColumnPropNameInTable="DERSIDColumn" msprop:Generator_UserColumnName="DERSID" type="xs:int" />
@@ -627,7 +703,7 @@ WHERE  (GONDEREN = '0001')</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Tbl_Mesajlar" msprop:Generator_TableClassName="Tbl_MesajlarDataTable" msprop:Generator_TableVarName="tableTbl_Mesajlar" msprop:Generator_TablePropName="Tbl_Mesajlar" msprop:Generator_RowDeletingName="Tbl_MesajlarRowDeleting" msprop:Generator_RowChangingName="Tbl_MesajlarRowChanging" msprop:Generator_RowEvHandlerName="Tbl_MesajlarRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_MesajlarRowDeleted" msprop:Generator_UserTableName="Tbl_Mesajlar" msprop:Generator_RowChangedName="Tbl_MesajlarRowChanged" msprop:Generator_RowEvArgName="Tbl_MesajlarRowChangeEvent" msprop:Generator_RowClassName="Tbl_MesajlarRow">
+        <xs:element name="Tbl_Mesajlar" msprop:Generator_TableClassName="Tbl_MesajlarDataTable" msprop:Generator_TableVarName="tableTbl_Mesajlar" msprop:Generator_RowChangedName="Tbl_MesajlarRowChanged" msprop:Generator_TablePropName="Tbl_Mesajlar" msprop:Generator_RowDeletingName="Tbl_MesajlarRowDeleting" msprop:Generator_RowChangingName="Tbl_MesajlarRowChanging" msprop:Generator_RowEvHandlerName="Tbl_MesajlarRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_MesajlarRowDeleted" msprop:Generator_RowClassName="Tbl_MesajlarRow" msprop:Generator_UserTableName="Tbl_Mesajlar" msprop:Generator_RowEvArgName="Tbl_MesajlarRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MESAJID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnMESAJID" msprop:Generator_ColumnPropNameInRow="MESAJID" msprop:Generator_ColumnPropNameInTable="MESAJIDColumn" msprop:Generator_UserColumnName="MESAJID" type="xs:int" />
@@ -662,6 +738,10 @@ WHERE  (GONDEREN = '0001')</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -687,8 +767,8 @@ WHERE  (GONDEREN = '0001')</CommandText>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Tbl_Duyurular_Tbl_Ogretmen" msdata:parent="Tbl_Ogretmen" msdata:child="Tbl_Duyurular" msdata:parentkey="OGRTID" msdata:childkey="DUYURUOGRT" msprop:Generator_UserChildTable="Tbl_Duyurular" msprop:Generator_ChildPropName="GetTbl_DuyurularRows" msprop:Generator_UserRelationName="FK_Tbl_Duyurular_Tbl_Ogretmen" msprop:Generator_ParentPropName="Tbl_OgretmenRow" msprop:Generator_RelationVarName="relationFK_Tbl_Duyurular_Tbl_Ogretmen" msprop:Generator_UserParentTable="Tbl_Ogretmen" />
-      <msdata:Relationship name="FK_Tbl_Ogretmen_Tbl_Dersler" msdata:parent="Tbl_Dersler" msdata:child="Tbl_Ogretmen" msdata:parentkey="DERSID" msdata:childkey="OGRTBRANS" msprop:Generator_UserChildTable="Tbl_Ogretmen" msprop:Generator_ChildPropName="GetTbl_OgretmenRows" msprop:Generator_UserRelationName="FK_Tbl_Ogretmen_Tbl_Dersler" msprop:Generator_ParentPropName="Tbl_DerslerRow" msprop:Generator_RelationVarName="relationFK_Tbl_Ogretmen_Tbl_Dersler" msprop:Generator_UserParentTable="Tbl_Dersler" />
+      <msdata:Relationship name="FK_Tbl_Duyurular_Tbl_Ogretmen" msdata:parent="Tbl_Ogretmen" msdata:child="Tbl_Duyurular" msdata:parentkey="OGRTID" msdata:childkey="DUYURUOGRT" msprop:Generator_UserChildTable="Tbl_Duyurular" msprop:Generator_ChildPropName="GetTbl_DuyurularRows" msprop:Generator_UserRelationName="FK_Tbl_Duyurular_Tbl_Ogretmen" msprop:Generator_RelationVarName="relationFK_Tbl_Duyurular_Tbl_Ogretmen" msprop:Generator_UserParentTable="Tbl_Ogretmen" msprop:Generator_ParentPropName="Tbl_OgretmenRow" />
+      <msdata:Relationship name="FK_Tbl_Ogretmen_Tbl_Dersler" msdata:parent="Tbl_Dersler" msdata:child="Tbl_Ogretmen" msdata:parentkey="DERSID" msdata:childkey="OGRTBRANS" msprop:Generator_UserChildTable="Tbl_Ogretmen" msprop:Generator_ChildPropName="GetTbl_OgretmenRows" msprop:Generator_UserRelationName="FK_Tbl_Ogretmen_Tbl_Dersler" msprop:Generator_RelationVarName="relationFK_Tbl_Ogretmen_Tbl_Dersler" msprop:Generator_UserParentTable="Tbl_Dersler" msprop:Generator_ParentPropName="Tbl_DerslerRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

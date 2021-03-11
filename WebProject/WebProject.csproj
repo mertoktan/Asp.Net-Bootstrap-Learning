@@ -343,9 +343,11 @@
     <Content Include="DuyuruGuncelle.aspx" />
     <Content Include="DuyuruListesi.aspx" />
     <Content Include="DuyuruSil.aspx" />
+    <Content Include="Galeri.aspx" />
     <Content Include="GelenMesajlar.aspx" />
     <Content Include="GidenMesajlar.aspx" />
     <Content Include="Grafikler.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="MesajOluştur.aspx" />
     <Content Include="NotListesi.aspx" />
     <Content Include="NotUpdate.aspx" />
@@ -353,6 +355,7 @@
     <Content Include="OgrencıEkle.aspx" />
     <Content Include="OgrencıGuncelle.aspx" />
     <Content Include="Web.config" />
+    <Content Include="İstatistikler.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataSet1.Designer.cs">
@@ -416,6 +419,13 @@
     <Compile Include="DuyuruSil.aspx.designer.cs">
       <DependentUpon>DuyuruSil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Galeri.aspx.cs">
+      <DependentUpon>Galeri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeri.aspx.designer.cs">
+      <DependentUpon>Galeri.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GelenMesajlar.aspx.cs">
       <DependentUpon>GelenMesajlar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -436,6 +446,13 @@
     </Compile>
     <Compile Include="Grafikler.aspx.designer.cs">
       <DependentUpon>Grafikler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MesajOluştur.aspx.cs">
       <DependentUpon>MesajOluştur.aspx</DependentUpon>
@@ -487,6 +504,13 @@
       <DependentUpon>Ogretmen.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="İstatistikler.aspx.cs">
+      <DependentUpon>İstatistikler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="İstatistikler.aspx.designer.cs">
+      <DependentUpon>İstatistikler.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ogretmen.Master" />
