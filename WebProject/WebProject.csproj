@@ -354,6 +354,9 @@
     <Content Include="OgrenciSil.aspx" />
     <Content Include="OgrencıEkle.aspx" />
     <Content Include="OgrencıGuncelle.aspx" />
+    <Content Include="OgrencıWebForm.aspx" />
+    <Content Include="Dosyalar1\StyleSheet1.css" />
+    <Content Include="Dosyalar1\StyleSheet3.css" />
     <Content Include="Web.config" />
     <Content Include="İstatistikler.aspx" />
   </ItemGroup>
@@ -482,6 +485,13 @@
     <Compile Include="OgrenciSil.aspx.designer.cs">
       <DependentUpon>OgrenciSil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ogrencı.Master.cs">
+      <DependentUpon>Ogrencı.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ogrencı.Master.designer.cs">
+      <DependentUpon>Ogrencı.Master</DependentUpon>
+    </Compile>
     <Compile Include="OgrencıEkle.aspx.cs">
       <DependentUpon>OgrencıEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -495,6 +505,13 @@
     </Compile>
     <Compile Include="OgrencıGuncelle.aspx.designer.cs">
       <DependentUpon>OgrencıGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrencıWebForm.aspx.cs">
+      <DependentUpon>OgrencıWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrencıWebForm.aspx.designer.cs">
+      <DependentUpon>OgrencıWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ogretmen.Master.cs">
       <DependentUpon>Ogretmen.Master</DependentUpon>
@@ -620,6 +637,7 @@
     <Content Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Content>
+    <Content Include="Ogrencı.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
