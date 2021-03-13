@@ -25,10 +25,10 @@
         <br />
 
 
-        <%--<div>
+        <div>
             <asp:TextBox ID="Txt4" runat="server" CssClass="form-control" Enabled="False">Fotoğraf:</asp:TextBox>
         </div>
-        <br />--%>
+        <br />
 
         <div>
             <asp:TextBox ID="Txt5" runat="server" CssClass="form-control" Enabled="False">Telefon:</asp:TextBox>

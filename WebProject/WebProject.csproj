@@ -347,7 +347,7 @@
     <Content Include="GelenMesajlar.aspx" />
     <Content Include="GidenMesajlar.aspx" />
     <Content Include="Grafikler.aspx" />
-    <Content Include="Login.aspx" />
+    <Content Include="Login1.aspx" />
     <Content Include="MesajOluştur.aspx" />
     <Content Include="NotListesi.aspx" />
     <Content Include="NotUpdate.aspx" />
@@ -450,12 +450,12 @@
     <Compile Include="Grafikler.aspx.designer.cs">
       <DependentUpon>Grafikler.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Login1.aspx.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Login1.aspx.designer.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
     </Compile>
     <Compile Include="MesajOluştur.aspx.cs">
       <DependentUpon>MesajOluştur.aspx</DependentUpon>
