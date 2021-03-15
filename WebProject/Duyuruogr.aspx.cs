@@ -7,14 +7,13 @@ using System.Web.UI.WebControls;
 
 namespace WebProject
 {
-    public partial class OgrencıNotu : System.Web.UI.Page
+    public partial class Duyuruogr : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.OgrNotlarTableAdapter dt = new DataSet1TableAdapters.OgrNotlarTableAdapter();
-            Repeater1.DataSource = dt.OgrNotuGetır(Session["NUMARA"].ToString());
+            DataSet1TableAdapters.Tbl_DuyurularTableAdapter dt = new DataSet1TableAdapters.Tbl_DuyurularTableAdapter();
+            Repeater1.DataSource = dt.DuyuruListesi();
             Repeater1.DataBind();
-
         }
     }
 }

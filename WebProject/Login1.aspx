@@ -8,12 +8,7 @@
     <link href="Dosyalar1/bootstrap.min.css" rel="stylesheet" />
 
     <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 396px;
-        }
-    </style>
-</head>
+    </head>
 <body>
     <form id="form1" runat="server">
         <div style="width:700px;margin:auto">
@@ -34,6 +29,10 @@
              <br />
              <br />
             <asp:Button ID="Button2" runat="server" Text="Şifremi Unuttum" CssClass="btn btn-danger" Width="700px" />
+            <br />
+            <br />
+            <asp:Button ID="Button3" runat="server" Text="Öğretmen Girişi" CssClass="active right" Width="700px" Height="30px" OnClick="Button3_Click" />
+             <br />
         </div>
     </form>
 </body>

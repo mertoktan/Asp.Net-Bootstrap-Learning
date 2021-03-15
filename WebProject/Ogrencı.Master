@@ -42,16 +42,16 @@
                             Mesajlar
                         </a>
                         <ul class="collapse list-unstyled" id="homeSubmenu3">
-                            <li><a href="GelenMesajlar.aspx"><i class="	glyphicon glyphicon-download"></i>Gelen Mesajlar</a></li>
-                            <li><a href="GidenMesajlar.aspx"><i class="	glyphicon glyphicon-upload"></i>Gönderilen Mesajlar</a></li>
-                            <li><a href="MesajOluştur.aspx"><i class="	glyphicon glyphicon-edit"></i>Mesaj Yaz</a></li>
+                            <li><a href="OgrencıGelenMesaj.aspx"><i class="	glyphicon glyphicon-download"></i>Gelen Mesajlar</a></li>
+                            <li><a href="OgrencıGidenMesaj.aspx"><i class="	glyphicon glyphicon-upload"></i>Gönderilen Mesajlar</a></li>
+                            <li><a href="OgrMesajOlustur.aspx"><i class="	glyphicon glyphicon-edit"></i>Mesaj Yaz</a></li>
                             
                             
                         </ul>
                         </li>
                     </li>
                     <li>
-                        <a href="NotListesi.aspx">
+                        <a href="Duyuruogr.aspx">
                             <i class="glyphicon glyphicon-bell"></i>
                             Duyurular
                         </a>
@@ -73,7 +73,7 @@
                     </li>
                 </ul>
 
-                <div style="margin-left:10px">Ad Soyad</div>
+                <div style="margin-left:10px"></div>
                
                 
             </nav>

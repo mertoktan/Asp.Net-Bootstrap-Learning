@@ -11,7 +11,7 @@
                 <th scope="col">ALICI</th>
                 <th scope="col">BAŞLIK</th>
                 <th scope="col">İÇERİK</th>
-                <th scope="col">İŞLEMLER</th>
+               
 
             </tr>
         </thead>

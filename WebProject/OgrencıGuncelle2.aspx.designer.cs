@@ -11,7 +11,7 @@ namespace WebProject
 {
 
 
-    public partial class OgrencıWebForm
+    public partial class OgrencıGuncelle2
     {
 
         /// <summary>
@@ -33,42 +33,6 @@ namespace WebProject
         protected global::System.Web.UI.WebControls.TextBox Txt1;
 
         /// <summary>
-        /// Txt2 denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt2;
-
-        /// <summary>
-        /// Txt3 denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt3;
-
-        /// <summary>
-        /// Txt4 denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt4;
-
-        /// <summary>
-        /// Txt5 denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt5;
-
-        /// <summary>
         /// Txt6 denetimi.
         /// </summary>
         /// <remarks>
@@ -76,6 +40,15 @@ namespace WebProject
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Txt6;
+
+        /// <summary>
+        /// Txt7 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txt7;
 
         /// <summary>
         /// Button1 denetimi.

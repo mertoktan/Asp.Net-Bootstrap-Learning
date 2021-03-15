@@ -11,7 +11,7 @@ namespace WebProject
 {
 
 
-    public partial class OgrencıWebForm
+    public partial class OgrMesajOlustur
     {
 
         /// <summary>
@@ -24,66 +24,48 @@ namespace WebProject
         protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
 
         /// <summary>
-        /// Txt1 denetimi.
+        /// TxtGönderen denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt1;
+        protected global::System.Web.UI.WebControls.TextBox TxtGönderen;
 
         /// <summary>
-        /// Txt2 denetimi.
+        /// TxtDuyurualıcı denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt2;
+        protected global::System.Web.UI.WebControls.TextBox TxtDuyurualıcı;
 
         /// <summary>
-        /// Txt3 denetimi.
+        /// TxtMesajBaslık denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt3;
+        protected global::System.Web.UI.WebControls.TextBox TxtMesajBaslık;
 
         /// <summary>
-        /// Txt4 denetimi.
+        /// Textiçerik denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt4;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea Textiçerik;
 
         /// <summary>
-        /// Txt5 denetimi.
+        /// BtnGonder denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt5;
-
-        /// <summary>
-        /// Txt6 denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt6;
-
-        /// <summary>
-        /// Button1 denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button BtnGonder;
     }
 }

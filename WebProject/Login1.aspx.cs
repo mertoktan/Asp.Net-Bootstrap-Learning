@@ -21,6 +21,7 @@ namespace WebProject
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            //ÖĞRENCİ GİRİŞ
             baglantı.Open();
             SqlCommand komut = new SqlCommand("SELECT * FROM Tbl_Ogrenci WHERE NUMARA=@p1 and OGRSIFRE=@p2",baglantı);
             komut.Parameters.AddWithValue("@p1",Txtnumara.Text);
@@ -28,7 +29,29 @@ namespace WebProject
             SqlDataReader dr = komut.ExecuteReader();
             if (dr.Read())
             {
-                Response.Redirect("OgrencıWebForm.aspx?NUMARA="+Txtnumara.Text);
+                Session.Add("NUMARA", Txtnumara.Text);
+                Response.Redirect("OgrencıWebForm.aspx");
+            }
+            else
+            {
+                Txtsıfre.Text = "HATALI ŞİFRE";
+            }
+            baglantı.Close();
+
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            //ÖĞRETMEN GİRİŞ
+            baglantı.Open();
+            SqlCommand komut = new SqlCommand("SELECT * FROM Tbl_Ogretmen WHERE OGRTNUMARA=@p1 and OGRTSIFRE=@p2", baglantı);
+            komut.Parameters.AddWithValue("@p1", Txtnumara.Text);
+            komut.Parameters.AddWithValue("@p2", Txtsıfre.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            if (dr.Read())
+            {
+                Session.Add("OGRTNUMARA", Txtnumara.Text);
+                Response.Redirect("Default.aspx");
             }
             else
             {

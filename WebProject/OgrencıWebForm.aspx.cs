@@ -15,29 +15,25 @@ namespace WebProject
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            Txt1.Text = "ÖĞRENCİ NUMARASI:" + Request.QueryString["Numara"];
+            Txt1.Text = Session["NUMARA"].ToString();
              
             DataSet1TableAdapters.Tbl_OgrenciTableAdapter dt = new DataSet1TableAdapters.Tbl_OgrenciTableAdapter();
-                
-            //EKSİKKKK
 
-            //Txt2.Text = dt.OgrencıPaneliGetir(Txt1.Text)[0].OGRAD;
-            //Txt3.Text = dt.OgrencıPaneliGetir(Txt1.Text)[0].OGRMAIL;
-            //Txt4.Text = dt.OgrencıPaneliGetir(Txt1.Text)[0].OGRFOTOGRAF;
-            //Txt5.Text = dt.OgrencıPaneliGetir(Txt1.Text)[0].OGRTELEFON;
-            //Txt6.Text = dt.OgrencıPaneliGetir(Txt1.Text)[0].OGRSIFRE;
+            
 
-
+            Txt2.Text ="AD SOYAD: " + dt.OgrencıPaneliGetir(Txt1.Text)[0].OGRAD;
+            Txt3.Text = "MAİL: " + dt.OgrencıPaneliGetir(Txt1.Text)[0].OGRMAIL;
+            Txt4.Text = "FOTOGRAF: " + dt.OgrencıPaneliGetir(Txt1.Text)[0].OGRFOTOGRAF;
+            Txt5.Text = "TELEFON: " + dt.OgrencıPaneliGetir(Txt1.Text)[0].OGRTELEFON;
+            Txt6.Text = "SİFRE: " + dt.OgrencıPaneliGetir(Txt1.Text)[0].OGRSIFRE;
 
 
 
+        }
 
-
-
-
-
-
-
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("OgrencıGuncelle2.aspx?NUMARA="+Txt1.Text);
         }
     }
 }

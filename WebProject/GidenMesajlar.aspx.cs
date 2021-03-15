@@ -12,7 +12,7 @@ namespace WebProject
         protected void Page_Load(object sender, EventArgs e)
         {
             DataSet1TableAdapters.Tbl_MesajlarTableAdapter dt = new DataSet1TableAdapters.Tbl_MesajlarTableAdapter();
-            Repeater1.DataSource = dt.OgretmenGidenMesajlar();
+            Repeater1.DataSource = dt.OgretmenGidenMesajlar(Session["OGRTNUMARA"].ToString());
             Repeater1.DataBind();
 
 

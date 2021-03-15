@@ -7,12 +7,12 @@ using System.Web.UI.WebControls;
 
 namespace WebProject
 {
-    public partial class OgrencıNotu : System.Web.UI.Page
+    public partial class OgrencıGidenMesaj : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.OgrNotlarTableAdapter dt = new DataSet1TableAdapters.OgrNotlarTableAdapter();
-            Repeater1.DataSource = dt.OgrNotuGetır(Session["NUMARA"].ToString());
+            DataSet1TableAdapters.Tbl_MesajlarTableAdapter dt = new DataSet1TableAdapters.Tbl_MesajlarTableAdapter();
+            Repeater1.DataSource = dt.OgrencıGıdenKutusu1(Session["NUMARA"].ToString());
             Repeater1.DataBind();
 
         }

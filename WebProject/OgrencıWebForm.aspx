@@ -42,16 +42,13 @@
         <br />
 
 
-        <div>
-            <asp:TextBox ID="Txt7" runat="server" CssClass="form-control" Enabled="False">Cinsiyet:</asp:TextBox>
-        </div>
-        <br />
+        
 
             </div>
 
 
 
-
+        <asp:Button ID="Button1" runat="server" Text="Şifre Güncelle" CssClass="btn btn-info" OnClick="Button1_Click"/>
     </form>
 
 </asp:Content>
