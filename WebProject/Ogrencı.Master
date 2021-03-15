@@ -32,7 +32,7 @@
                 <ul class="list-unstyled components">
                     
                     <li>
-                        <a href="DersListesi.aspx">
+                        <a href="OgrencıWebForm.aspx">
                             <i class="glyphicon glyphicon-user"></i>
                             Profilim
                         </a>
@@ -58,7 +58,7 @@
                     </li>
 
                     <li>
-                        <a href="NotListesi.aspx">
+                        <a href="OgrencıNotu.aspx">
                             <i class="glyphicon glyphicon-book"></i>
                             Sınav Notları
                         </a>

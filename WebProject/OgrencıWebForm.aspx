@@ -12,7 +12,7 @@
 
             <br />
 
-        </div>
+        
         <div>
             <asp:TextBox ID="Txt2" runat="server" CssClass="form-control" Enabled="False">Ad Soyad:</asp:TextBox>
         </div>
@@ -47,7 +47,7 @@
         </div>
         <br />
 
-
+            </div>
 
 
 

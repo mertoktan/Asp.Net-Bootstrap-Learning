@@ -354,6 +354,7 @@
     <Content Include="OgrenciSil.aspx" />
     <Content Include="OgrencıEkle.aspx" />
     <Content Include="OgrencıGuncelle.aspx" />
+    <Content Include="OgrencıNotu.aspx" />
     <Content Include="OgrencıWebForm.aspx" />
     <Content Include="Dosyalar1\StyleSheet1.css" />
     <Content Include="Dosyalar1\StyleSheet3.css" />
@@ -361,6 +362,9 @@
     <Content Include="İstatistikler.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -505,6 +509,13 @@
     </Compile>
     <Compile Include="OgrencıGuncelle.aspx.designer.cs">
       <DependentUpon>OgrencıGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrencıNotu.aspx.cs">
+      <DependentUpon>OgrencıNotu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrencıNotu.aspx.designer.cs">
+      <DependentUpon>OgrencıNotu.aspx</DependentUpon>
     </Compile>
     <Compile Include="OgrencıWebForm.aspx.cs">
       <DependentUpon>OgrencıWebForm.aspx</DependentUpon>
